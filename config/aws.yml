@@ -1,0 +1,12 @@
+#AWS keys
+development:
+    access_key_id: AKIAJ6MZGJMIRRQ73D4A
+    secret_access_key: 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
+    bucket: snowschoolers
+    region: US Standard
+
+production:
+    access_key_id: AKIAJ6MZGJMIRRQ73D4A
+    secret_access_key: 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
+    bucket: snowschoolers
+    region: US Standard
