@@ -164,12 +164,6 @@ a, a:hover, a:active,
 	background:#333333;
 	color:#fff;
 	border-top:rgba(255,255,255,0.06) 1px solid;
-<<<<<<< HEAD
-	/*border-bottom:rgba(255,255,255,0.3) 1px solid;*/
-	z-index:99; /* keep it over #overlay */
-}
-
-=======
 	border-bottom:rgba(255,255,255,0.3) 1px solid;
 	z-index:99; /* keep it over #overlay */
 }
@@ -179,7 +173,6 @@ a, a:hover, a:active,
 		float:left;
 		height:60px;
 	}
->>>>>>> 42fadd0f9befc3bf3ea5206a92ae036b9d6fbbe9
 
 	#header p {
 		color:#ccc;

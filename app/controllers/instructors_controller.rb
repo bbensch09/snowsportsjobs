@@ -53,10 +53,6 @@ class InstructorsController < ApplicationController
 
   # GET /instructors/new
   def new
-<<<<<<< HEAD
-      @instructor = Instructor.new
-      @instructor_id = nil
-=======
     if current_user.instructor
       @instructor = current_user.instructor
       @instructor_id = Instructor.find(params[:id]).user_id
@@ -66,7 +62,6 @@ class InstructorsController < ApplicationController
       @instructor_id = nil
     end
 
->>>>>>> 42fadd0f9befc3bf3ea5206a92ae036b9d6fbbe9
   end
 
   # GET /instructors/1/edit
@@ -92,14 +87,9 @@ class InstructorsController < ApplicationController
         # ga_test_cid = params[:ga_client_id]
         # puts "The GA ga_client_id is #{ga_test_cid}."
         session[:instructor_id] = @instructor.id
-<<<<<<< HEAD
         flash[:conversion] == 'TRUE'
         GoogleAnalyticsApi.new.event('instructor-recruitment', 'new-application-submitted', params[:ga_client_id])
         format.html { redirect_to '/thanks-for-applying', notice: 'Thanks! Your application was successfully submitted, and we look forward to contacting you shortly. You may also reach out with questions to info@snowsportsjobs.com' }
-=======
-        GoogleAnalyticsApi.new.event('instructor-recruitment', 'new-application-submitted', params[:ga_client_id])
-        format.html { render 'thank_you', notice: 'Your instructor application was successfully submitted, you will be contacted shortly. You may also reach out with questions to info@snowschoolers.com' }
->>>>>>> 42fadd0f9befc3bf3ea5206a92ae036b9d6fbbe9
         format.json { render action: 'show', status: :created, location: @instructor }
       else
         format.html { render action: 'new' }
