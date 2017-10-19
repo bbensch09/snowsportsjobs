@@ -136,7 +136,7 @@ class LessonMailer < ActionMailer::Base
 
   def send_new_instructor_application_confirmation(instructor)
     @instructor = instructor
-    mail(to: @instructor.username, cc: 'info@snowsports.com', subject: "Thanks for applying for a Snow Sports Job -- please schedule your interview!")
+    mail(to: @instructor.username, cc: 'info@snowsportsjobs.com', subject: "Thanks for applying for a Snow Sports Job -- please schedule your interview!")
   end
 
   def new_homewood_application_received(applicant)
