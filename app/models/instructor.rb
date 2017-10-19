@@ -16,7 +16,6 @@ class Instructor < ActiveRecord::Base
         :bucket => 'snowschoolers'
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
-
   def winter_plans
     case self.bio.to_i
     when 1

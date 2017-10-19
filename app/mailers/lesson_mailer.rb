@@ -1,5 +1,9 @@
 class LessonMailer < ActionMailer::Base
+<<<<<<< HEAD
   default from: 'SnowSportsJobs.com <snowsportsjobs@gmail.com>'
+=======
+  default from: 'SnowSchoolers.com <info@snowschoolers.com>'
+>>>>>>> 42fadd0f9befc3bf3ea5206a92ae036b9d6fbbe9
 
   def track_apply_visits(email="Unknown user")
       @email = email
@@ -131,12 +135,16 @@ class LessonMailer < ActionMailer::Base
 
   def new_instructor_application_received(instructor)
     @instructor = instructor
+<<<<<<< HEAD
     mail(to: 'brian@snowschoolers.com', subject: "SnowSportsJobs Application: #{@instructor.username} has applied!")
   end
 
     def send_new_instructor_application_confirmation(instructor)
     @instructor = instructor
     mail(to: @instructor.username, cc: 'info@snowsports.com', subject: "Thanks for applying for a Snow Sports Job -- please schedule your interview!")
+=======
+    mail(to: 'brian@snowschoolers.com', subject: "Submitted Application: #{@instructor.username} has applied to join Snow Schoolers")
+>>>>>>> 42fadd0f9befc3bf3ea5206a92ae036b9d6fbbe9
   end
 
   def new_homewood_application_received(applicant)

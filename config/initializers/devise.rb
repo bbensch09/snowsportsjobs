@@ -11,7 +11,6 @@ Devise.setup do |config|
   # Source:
   # https://stackoverflow.com/questions/31496744/nomethoderror-in-deviseregistrationsnew-on-sign-up-with-devise-and-refinery-c 
 
-
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
